@@ -2,11 +2,11 @@
 
 ## Description
 
-Improves matchup tables with abilities to sort and group data.
+Improves matchup tables (on a map page) with abilities to sort and group data.
 
 ## Screenshot
 
-![table screenshot](./screenshot.png)
+![BGH 3v3 table screenshot](./bgh-3v3-table-screenshot.png)
 
 ## How to install the script
 
