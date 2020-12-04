@@ -8,6 +8,8 @@ Improves matchup tables (on a map page) with abilities to sort and group data.
 
 ![BGH 3v3 table screenshot](./bgh-3v3-table-screenshot.png)
 
+See it in action [here](https://repmastered.app/map/Big%20Game%20Hunters#v33-details) (you have to install the script to see it).
+
 ## How to install the script
 
 1. Install one of these browser extensions: [Violentmonkey](https://violentmonkey.github.io/get-it/) / [Greasemonkey](https://www.greasespot.net/) / [Tampermonkey](https://tampermonkey.net/)
