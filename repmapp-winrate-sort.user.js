@@ -8,7 +8,7 @@
 // @author      T1mL3arn
 // @run-at      document-end
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
-// @require     https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/dataTables.dataTables.min.js
+// @require     https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js
 // @license     WTFPL 2
 // @icon        https://repmastered.app/static/img/favicon.ico
 // ==/UserScript==
