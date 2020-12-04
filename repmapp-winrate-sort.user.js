@@ -2,7 +2,7 @@
 // @name        repmastered.app winrate sort
 // @description Improves matchup tables with sorting and grouping data
 // @namespace   https://github.com/T1mL3arn
-// @version     1.0.2
+// @version     1.0.3
 // @match       https://repmastered.app/map/*
 // @grant       none
 // @author      T1mL3arn
@@ -161,6 +161,10 @@ const CSS_FIX = `
         margin-top: 2em;
         margin-bottom: 1em;
     }
+
+    td.no-after::after {
+        content: '';
+    }
 `
 
 $('<style></style>').attr('id', 'sort-stats-css-fix').text(CSS_FIX).appendTo('head')
@@ -176,7 +180,7 @@ function fixCss($target, width = '80%') {
     return $target
 }
 
-/** Removes markup from text extracted from mathup coulumn */
+/** Removes markup from text extracted from matchup coulumn */
 function getMatchup(txt) {
     txt = txt.slice(txt.indexOf('>')+1)
     return txt.slice(0, txt.indexOf('<'))
@@ -237,6 +241,12 @@ function showMatchup2Popup(e) {
     
     // restore original text
     cell.textContent = srcText
+}
+
+/** Add shared title attribute to both matchup cells 
+ * (they were splitted before) */
+function setMatchupTitle(td, d, row) {
+    $(td).attr('title', `${row[0]}v${getMatchup(row[1])}`)
 }
 
 // ----------------------------
@@ -316,7 +326,8 @@ const initArgs = {
     orderMulti: true,
     columnDefs: [
         // disable ordering for some columns
-        { orderable: false, targets: [4, 9, 10] }
+        { orderable: false, targets: [4, 9, 10] },
+        { createdCell: setMatchupTitle, targets: [0, 1] },
     ],
     autoWidth: false,
 }
@@ -332,6 +343,9 @@ $(TBL_SELECTOR).each((i, tbl) => {
         .addClass('matchup-details')
         .attr('id', `${id}-details`)
 })
+$(TBL_SELECTOR).not('#v11').find('tbody tr')
+    .find('td:first-child, td:nth-child(2)')
+    .addClass('no-after')
 
 // ----------------------------
 
