@@ -2,7 +2,7 @@
 // @name        repmastered.app winrate sort
 // @description Improves matchup tables with sorting and grouping data
 // @namespace   https://github.com/T1mL3arn
-// @version     1.0.1
+// @version     1.0.2
 // @match       https://repmastered.app/map/*
 // @grant       none
 // @author      T1mL3arn
@@ -11,6 +11,8 @@
 // @require     https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js
 // @license     WTFPL 2
 // @icon        https://repmastered.app/static/img/favicon.ico
+// @homepageURL https://github.com/t1ml3arn-userscript-js/repmastered.app-winrate-sorting
+// @supportURL  https://github.com/t1ml3arn-userscript-js/repmastered.app-winrate-sorting/issues
 // ==/UserScript==
 
 // add DataTables CSS
