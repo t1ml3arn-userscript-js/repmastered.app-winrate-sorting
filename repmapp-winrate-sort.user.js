@@ -8,7 +8,7 @@
 // @author      T1mL3arn
 // @run-at      document-end
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
-// @require     https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js
+// @require     https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/dataTables.dataTables.min.js
 // @license     WTFPL 2
 // ==/UserScript==
 
@@ -16,7 +16,7 @@
 const link = document.createElement('link')
 link.rel = "stylesheet"
 link.type = "text/css"
-link.href = "https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css"
+link.href = "https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css"
 link.onload = _ => run()
 
 document.head.appendChild(link)
