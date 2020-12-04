@@ -324,7 +324,12 @@ $('#v22, #v33, #v44').DataTable(initArgs)
 
 // apply CSS fixes
 fixCss($(TBL_SELECTOR))
-$(TBL_SELECTOR).parent().parent().addClass('matchup-details')
+$(TBL_SELECTOR).each((i, tbl) => {
+    const id = tbl.id
+    $(tbl).parent().parent()
+        .addClass('matchup-details')
+        .attr('id', `${id}-details`)
+})
 
 // ----------------------------
 
