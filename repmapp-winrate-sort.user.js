@@ -2,7 +2,7 @@
 // @name        repmastered.app winrate sort
 // @description Improves matchup tables with sorting and grouping data
 // @namespace   https://github.com/T1mL3arn
-// @version     1.0.0
+// @version     1.0.1
 // @match       https://repmastered.app/map/*
 // @grant       none
 // @author      T1mL3arn
